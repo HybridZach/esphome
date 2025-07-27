@@ -10,7 +10,7 @@ This will **not** work with *any* AC manufactured by Clarke Air.
 
 The model number in question is `Clarke AC7050 3-1 AC 7000BTU`.
 
-# Assumptions and configurations
+## Assumptions and configurations
 
 You will need to modify a few things in the YAML first.
 
