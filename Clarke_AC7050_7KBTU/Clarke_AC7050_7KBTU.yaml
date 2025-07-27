@@ -1,6 +1,6 @@
 # Define IR pin
 substitutions:
-  IR_pin: 
+  IR_pin: GPIOXXX
 
 esphome:
   name: ac-control
