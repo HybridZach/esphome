@@ -59,7 +59,6 @@ switch:
   - platform: template
     name: "On/Off"
     icon: mdl:air-conditioner
-    restore_mode: ALWAYS_ON
     optimistic: True
     turn_on_action: 
       then:
@@ -74,7 +73,6 @@ switch:
   - platform: template
     name: "Fan Speed"
     icon: mdi:fan
-    restore_mode: ALWAYS_ON
     optimistic: True
     turn_on_action: 
       then:
@@ -140,6 +138,9 @@ button:
       then:
         - remote_transmitter.transmit_pronto: 
             data: "0000 006D 0022 0000 015C 00AC 0017 0015 0017 0015 0017 0015 0017 0015 0017 0041 0017 0015 0017 0015 0016 0015 0017 0041 0017 0041 0017 0041 0017 0015 0016 0015 0016 0041 0017 0041 0017 0041 0017 0041 0017 0015 0017 0041 0017 0041 0017 0015 0017 0015 0017 0015 0017 0015 0017 0015 0017 0041 0017 0015 0016 0015 0017 0041 0017 0041 0017 0041 0017 0041 0016 0180"
+
+  - platform: restart
+    name: "Restart Device"
 
 
 # Display current mode in HA
